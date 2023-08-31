@@ -1,2 +1,4 @@
 class Activity < ApplicationRecord
-end
+    has_many :signups
+    has_many :campers, through: :signups
+  end
